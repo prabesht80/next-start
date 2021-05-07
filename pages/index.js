@@ -1,65 +1,23 @@
 import Head from 'next/head'
+import Footer from '../comps/Footer'
+import Navbar from '../comps/Navbar'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Prabesh lIST | hOME</title> 
+        <meta name="keywords" content="list" />
       </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
+      <div>
+        <h1 className={styles.title}>Home</h1>
+        <p className={styles.text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eos repellat odio consequuntur magnam itaque quibusdam mollitia expedita aut eum. Dolor beatae quae necessitatibus id commodi perferendis hic odit dolore.l Lorem ipsum dolor, sit amet consectetur adipisicing elit. In adipisci nulla distinctio neque numquam esse iste animi recusandae repellat minima voluptate dolorum velit sed debitis, quae architecto cum, eius aspernatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid totam consequuntur perspiciatis obcaecati officia fugit blanditiis iure nemo molestiae assumenda eius eum dolorem aspernatur, accusantium necessitatibus soluta ipsam! Ullam, veritatis.</p>
+        <Link href="/prabesh">
+          <a className={styles.btn}>See ninjas Listing</a>
+        </Link>
+      </div>
+    </>
   )
 }
